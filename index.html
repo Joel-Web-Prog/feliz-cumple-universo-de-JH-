@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Feliz cumpleaños Jhoana 💗</title><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
+</head><body><section id="cover">
+<div class="cover-box"><small>UNA EXPERIENCIA ENTRE LAS ESTRELLAS</small>
+<h1>Feliz cumpleaños<br><span>Jhoana</span> 💗</h1>
+<p>No se me olvidó.<br>Prepárate para una inmersión mágica,<br>un paseo por mi universo.</p>
+<button id="enter">Ingresar al universo ✦</button></div></section>
+<main id="world" class="hide"><canvas id="space"></canvas>
+<header><strong id="title">Mi universo para Jhoana ✨</strong><button id="back" class="hide">← Volver al universo</button></header>
+<div id="hint">Arrastra para explorar · Rueda o pellizca para acercarte</div>
+<div id="phrase" class="phrase-overlay hide"><div class="phrase-center" id="phraseCenter"></div><section id="characterScene" class="character-scene"><div class="character-art"><img id="characterImage" alt="Imagen seleccionada"></div><div class="character-message"><small>UN MENSAJE PARA TI</small><p id="phraseText"></p><button id="closePhrase" class="cancel-phrase">Cancelar ✕</button></div></section><article class="phrase-card" id="phraseCard"><button id="closePhraseFallback" class="x">×</button><small>UN MENSAJE PARA TI</small><p id="heartPhraseText"></p></article></div>
+<div id="videoBox" class="overlay hide"><video id="video" controls playsinline></video><button id="closeVideo">← Volver a la galaxia</button></div>
+<section id="audioPlayer" class="audio-player hide" aria-label="Reproductor de sonido especial">
+ <button id="audioPlay" class="audio-play" aria-label="Reproducir o pausar">▶</button>
+ <div class="audio-details"><div class="audio-heading"><strong>Sonido especial</strong><span id="audioTime">0:00</span></div>
+ <input id="audioSeek" type="range" min="0" max="1000" value="0" aria-label="Posición del audio">
+ <div class="audio-controls"><button id="audioBack" aria-label="Retroceder 10 segundos">↶ 10 s</button><span>♫</span><button id="audioForward" aria-label="Avanzar 10 segundos">10 s ↷</button></div></div>
+ </section>
+</main><script type="module" src="script.js"></script></body></html>
